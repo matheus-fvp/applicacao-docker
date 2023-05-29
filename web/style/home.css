@@ -284,7 +284,7 @@ header {
 }
 
 .minus {
-    display:none;
+    display: none;
 }
 
 .active .plus {
@@ -297,4 +297,61 @@ header {
 
 .active {
     border-bottom: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 50px;
+}
+
+.footer-item {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.footer-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item ul a {
+    color: #FFF;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media i {
+    color: var(--light-grey);
+    font-size: 30px;
+}
+
+.social-media a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #581ECD;
+    display: grid;
+    place-items: center;
+}
+
+.social-media a:hover {
+    transform: scale(1.07);
+    transition: .4s;
 }

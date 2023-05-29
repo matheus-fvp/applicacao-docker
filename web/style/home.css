@@ -140,6 +140,70 @@ header {
     width: 37px;
     height: 37px;
     background-color: var(--light-grey);
-    bottom: 35px;
+    bottom: 20px;
     z-index: 50;
+}
+
+/* Por que section*/
+.porq {
+    background-image: linear-gradient(var(--secondary), var(--primary));
+    margin-top: -100px;
+    padding: 100px 0;
+    color: #fff;
+    position: relative;
+}
+
+.porq::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid 4px white;
+    background-color: var(--secondary);
+    background-image: url('../img/icon-trigulo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
+    top: -30px;
+}
+
+.porq h2 {
+    margin: 0 0 30px 0; 
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.porq hr {
+    width: 10%;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.porq-campos-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.porq-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.porq-item h4, .porq-item p {
+    margin: 0;
+}
+
+.porq-item div:first-child {
+    border: solid 2px #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.porq-item i {
+    font-size: 40px;
 }
